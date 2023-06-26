@@ -20,8 +20,8 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
-        SONAR_TOKEN: 842b61a44fc45da9f4a9938d272de06045b678de
-        SONAR_HOST_URL: https://events.hookdeck.com/e/src_93UIILVeInfC/
+        SONAR_TOKEN: ecc83425827e33617d6efb100307f0ddec4d8081
+        SONAR_HOST_URL: http://20.107.61.102:9000
 
     # Check the Quality Gate status.
     - name: SonarQube Quality Gate check
@@ -30,9 +30,9 @@ jobs:
       # Force to fail step after specific time.
       timeout-minutes: 5
       env:
-       SONAR_TOKEN: 842b61a44fc45da9f4a9938d272de06045b678de
-       SONAR_HOST_URL: https://events.hookdeck.com/e/src_93UIILVeInfC/ #OPTIONAL
-
+       SONAR_TOKEN: ecc83425827e33617d6efb100307f0ddec4d8081
+       SONAR_HOST_URL: http://20.107.61.102:9000 
+       
     # Optionally you can use the output from the Quality Gate in another step.
     # The possible outputs of the `quality-gate-status` variable are `PASSED`, `WARN` or `FAILED`.
     - name: "Example show SonarQube Quality Gate Status value"
