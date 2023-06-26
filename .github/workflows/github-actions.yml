@@ -24,6 +24,7 @@ jobs:
         SONAR_HOST_URL: http://20.107.61.102:9000
         ProjectName: springboot-helloworld
         ProjectKey: sonartest
+        SONAR_SCANNER_OPTS: "-Dsonar.projectKey=sonartest"
 
     # Check the Quality Gate status.
     - name: SonarQube Quality Gate check
