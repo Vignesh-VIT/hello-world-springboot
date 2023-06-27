@@ -23,6 +23,7 @@ jobs:
         projectBaseDir: .
         args: >
           -Dsonar.projectKey=sonartest
+          -Dsonar.sonar.sources= src
         #  -Dsonar.sources=https://github.com/Vignesh-VIT/hello-world-springboot/
       env:
         SONAR_TOKEN: ecc83425827e33617d6efb100307f0ddec4d8081
