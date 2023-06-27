@@ -22,7 +22,7 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=sonartest
-          -Dsonar.sources=.
+          -Dsonar.sources=https://github.com/Vignesh-VIT/hello-world-springboot/src/
       env:
         SONAR_TOKEN: ecc83425827e33617d6efb100307f0ddec4d8081
         SONAR_HOST_URL: http://20.107.61.102:9000
