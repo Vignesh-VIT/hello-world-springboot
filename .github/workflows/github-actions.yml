@@ -20,6 +20,7 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       with:
+        projectBaseDir: hello-world-springboot/src
         args: >
           -Dsonar.projectKey=sonartest
         #  -Dsonar.sources=https://github.com/Vignesh-VIT/hello-world-springboot/
