@@ -48,8 +48,8 @@ jobs:
     - name: "Example show SonarQube Quality Gate Status value"
       run: |
         echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}"
-        echo "${{ steps.quality-gate-check.outputs.project-status }}"
-        echo "${{ steps.quality-gate-check.outputs.quality-gate-result }}"
+        echo "${{ steps.sonarqube-quality-gate-check.outputs.project-status }}"
+        echo "${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-result }}"
 
 
 
